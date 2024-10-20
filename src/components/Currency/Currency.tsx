@@ -1,8 +1,8 @@
-import { v4 } from 'uuid';
 import './currency.css';
 
 interface ICurrencyProps {
   currencyData: {
+    id: string;
     name: string;
     value: string;
     dynamics: string;
@@ -12,7 +12,7 @@ interface ICurrencyProps {
 const Currency = ({ currencyData }: ICurrencyProps) => {
   const items = currencyData.map((obj) => {
     return (
-      <li key={v4()} className="currency__item">
+      <li key={obj.id} className="currency__item">
         <span className="currency__exchange-rate">
           <span className="currency__exchange-name">{obj.name}</span>
           <span className="currency__exchange-value">{obj.value}</span>

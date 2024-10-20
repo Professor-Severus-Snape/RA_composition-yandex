@@ -1,12 +1,15 @@
 import { ReactNode } from 'react';
-import { v4 } from 'uuid';
 import './news.css';
 
 interface INewsProps {
-  titles: string[];
+  titles: {
+    id: string;
+    title: string;
+  }[];
   activeTitle: string;
   date: string;
   items: {
+    id: string;
     icon: string;
     text: string;
   }[];
@@ -16,19 +19,19 @@ interface INewsProps {
 const News = ({ titles, activeTitle, date, items, children }: INewsProps) => {
   const titleItems = titles.map((item) => {
     const nameOfClass = `news__title-item${
-      item === activeTitle ? ' news__title-item_active' : ''
+      item.title === activeTitle ? ' news__title-item_active' : ''
     }`;
 
     return (
-      <li key={v4()} className={nameOfClass}>
-        {item}
+      <li key={item.id} className={nameOfClass}>
+        {item.title}
       </li>
     );
   });
 
   const newsItems = items.map((el) => {
     return (
-      <li key={v4()} className="news__item">
+      <li key={el.id} className="news__item">
         <img src={el.icon} alt="иконка" className="news__item-image" />
         <p className="news__item-text">{el.text}</p>
       </li>

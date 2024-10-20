@@ -10,6 +10,18 @@ a {
   color: inherit;
 }
 
+img {
+	vertical-align: top;
+}
+
+button,
+input {
+  border: none;
+  font-size: inherit;
+  background-color: #fff;
+  outline: none;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -20,4 +32,9 @@ ol {
   margin: 0 auto;
 
   outline: 2px solid blue; /* NOTE: временно */
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
