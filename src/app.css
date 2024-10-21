@@ -11,11 +11,25 @@
   flex-direction: column;
   gap: 10px;
   
-  padding: 20px 150px 20px 20px;
+  padding: 10px 150px 10px 20px;
 }
 
 .search {
   display: flex;
   align-items: center;
+  gap: 20px;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  padding: 10px 60px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }

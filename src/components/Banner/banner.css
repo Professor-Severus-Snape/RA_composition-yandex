@@ -1,0 +1,15 @@
+.banner {
+  padding-left: 130px;
+  padding-right: 235px;
+}
+
+.banner__link {
+  display: block;
+}
+
+.banner__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center -120px;
+}

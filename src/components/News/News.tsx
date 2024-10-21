@@ -45,7 +45,7 @@ const News = ({ titles, activeTitle, date, items, children }: INewsProps) => {
         <div className="news__date">{date}</div>
       </header>
       <ul className="news__list">{newsItems}</ul>
-      {children}
+      <footer className="news__footer">{children}</footer>
     </section>
   );
 };
