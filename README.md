@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/w1amn954dhhvvey6?svg=true)](https://ci.appveyor.com/project/Professor-Severus-Snape/ra-composition-yandex)
+
 # Декомпозиция
 
 Вы работаете в стартапе, который решил тягаться с самим Яндексом в части предоставления контента. Это, конечно же, шутка, но задача нешуточная.
